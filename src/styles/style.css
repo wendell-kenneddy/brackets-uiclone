@@ -172,7 +172,7 @@ h1 span {
 
 @media (max-width: 890px) {
   #page-header {
-    padding: 15px;
+    padding: 8px 15px;
 
     align-content: space-between;
     justify-content: space-between;
