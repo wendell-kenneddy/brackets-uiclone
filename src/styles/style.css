@@ -99,6 +99,10 @@ svg#menu:hover {
   padding-bottom: 3px;
 }
 
+#sections li a {
+  display: block;
+}
+
 #sections li::after {
   content: "";
   display: block;
@@ -220,6 +224,59 @@ h1 span {
 
   #sections li::after {
     display: none;
+  }
+}
+
+@media (max-width: 625px) {
+  #page-header nav {
+    padding-top: 0;
+    width: 45%;
+    left: 40%;
+
+    font-size: 18px;
+    text-align: left;
+  }
+
+  #page-header nav ul {
+    margin: 0;
+
+    justify-items: flex-start;
+    align-items: flex-start;
+  }
+
+  #sections li {
+    width: 100%;
+
+    display: flex;
+    align-content: center;
+  }
+
+  #page-header nav li a {
+    margin: 15px 0 0 15px;
+  }
+
+  #page-header nav li {
+    margin-left: 0;
+  }
+
+  #sections li + li {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  #sections li + li::before {
+    content: "";
+    width: 100%;
+    height: 0.1px;
+    background-color: #616161;
+
+    position: absolute;
+    top: 0;
+  }
+
+  #sections {
+    flex-direction: column;
+    align-content: flex-start;
   }
 }
 
