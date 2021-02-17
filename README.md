@@ -26,7 +26,7 @@ Este projeto é um UI Clone da navbar da [landing page do Brackets Editor](http:
 
 ## :hammer_and_pick: Tecnologias Utilizadas
 
-Para desenvolver este projeto, utilizei as seguintes tecnologias: 
+Para desenvolver este projeto, utilizei as seguintes tecnologias:
 
 - Visual Studio Code (Editor de código)
 - HTML5
@@ -35,9 +35,9 @@ Para desenvolver este projeto, utilizei as seguintes tecnologias:
 
 ---
 
-## :pushpin: A Ser Adicionado
+## :heavy_check_mark: A Ser Adicionado
 
-- [ ] Responsividade para aparelhos de display menor que 625px
+- [x] Responsividade para aparelhos de display menor que 625px
 
 ---
 
