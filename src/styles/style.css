@@ -80,7 +80,7 @@ svg#menu:hover {
 
 #page-header nav ul {
   display: flex;
-
+  flex-wrap: wrap;
   align-items: center;
   justify-items: center;
 }
@@ -207,20 +207,11 @@ h1 span {
     left: 0;
     right: 0;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
 
     font-size: 0.75rem;
-  }
-
-  #page-header nav hr {
-    grid-column: 1 / -1;
-    grid-row: 2;
-  }
-
-  #social-links {
-    grid-row: 3;
   }
 
   #page-header nav ul {
