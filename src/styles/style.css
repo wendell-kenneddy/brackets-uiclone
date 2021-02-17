@@ -21,17 +21,13 @@ li {
   position: relative;
 }
 
-div.x-line {
-  width: 0;
-  height: 2px;
-  background: #000;
-  transition: 0.5s ease-in-out;
+svg#menu {
+  fill: #616161;
+  transition: 0.3s ease-in-out;
+}
 
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 2.2rem;
+svg#menu:hover {
+  fill: #000;
 }
 
 .container {
@@ -50,7 +46,7 @@ div.x-line {
 #page-header {
   background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
-  padding: 15px;
+  padding: 8px 30px;
 
   display: flex;
   align-items: center;
@@ -59,14 +55,14 @@ div.x-line {
   top: 0;
 }
 
-#page-header #brackets-logo {
-  font-size: 1.2em;
-  font-weight: bold;
+#page-header h1 {
+  display: flex;
+  align-items: center;
 }
 
 #page-header nav {
   padding: 0 30px;
-  width: 100%;
+  width: 85%;
 
   display: flex;
   justify-content: space-between;
@@ -107,14 +103,31 @@ div.x-line {
   right: 0;
   left: 0;
 }
+
 #sections li:hover:after {
   width: 100%;
   background: black;
 }
 
-#sections li + li,
-#social-links li + li {
+#sections li + li {
   margin-left: 40px;
+}
+
+#social-links {
+  margin-right: 30px;
+}
+
+#social-links li + li {
+  margin-left: 30px;
+}
+
+#social-links svg {
+  fill: #616161;
+  transition: 0.3s ease-in-out;
+}
+
+#social-links svg:hover {
+  fill: #000;
 }
 
 /* Main */
@@ -159,6 +172,8 @@ h1 span {
 
 @media (max-width: 890px) {
   #page-header {
+    padding: 15px;
+
     align-content: space-between;
     justify-content: space-between;
   }
