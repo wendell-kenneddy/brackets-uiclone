@@ -3,7 +3,7 @@
 ![Autor](https://img.shields.io/badge/author-Wendell%20Kenneddy-brightgreen)
 ![Pull Requests](https://img.shields.io/badge/PRs-welcome-brightgreen)
 ![Tecnologias](https://img.shields.io/badge/techs-HTML%2C%20CSS%2C%20JS-brightgreen)
-![Status](https://img.shields.io/badge/status-unfinished-orange)
+![Status](https://img.shields.io/badge/status-concluded-brightgreen)
 
 ![Resultado Final](./.github/final-result.png)
 
