@@ -49,8 +49,8 @@ div.x-line {
 
 #page-header {
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 15px;
   width: 100%;
+  padding: 15px;
 
   display: flex;
   align-items: center;
@@ -88,8 +88,32 @@ div.x-line {
   color: rgba(61, 61, 61, 1);
 }
 
-#page-header nav #sections li + li,
-#page-header nav #social-links li + li {
+#sections li {
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+#sections li::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+
+  position: absolute;
+  top: 2.2rem;
+  right: 0;
+  left: 0;
+}
+#sections li:hover:after {
+  width: 100%;
+  background: black;
+}
+
+#sections li + li,
+#social-links li + li {
   margin-left: 40px;
 }
 
@@ -116,7 +140,7 @@ h1 span {
   background-color: #2098f5;
   border-radius: 3px;
   padding: 1rem;
-  transition: .32s;
+  transition: 0.32s;
 
   font-size: 20px;
   font-weight: 400;
@@ -134,7 +158,6 @@ h1 span {
 /* Responsivity */
 
 @media (max-width: 890px) {
-
   #page-header {
     align-content: space-between;
     justify-content: space-between;
